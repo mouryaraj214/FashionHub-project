@@ -1,0 +1,11 @@
+h1{
+    color: blueviolet;
+    text-decoration: line-through;
+}
+body{
+    background-color: rgb(139, 215, 215);
+}
+button{
+    background-color: burlywood;
+    color: aqua;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array and loop</title>
+</head>
+<body>
+    <script>
+        let arr = [5,6];
+        arr.push(7);
+        arr.unshift(4);
+        console.log(arr);
+        let sum = (a,b) =>
+        {
+            return a+b;
+        }
+        let newsum = sum;
+        console.log(newsum(2,5));
+
+        let alarm = () =>
+        {
+            console.log(`Good morning ${new Date()}`);
+        }
+        let al = setTimeout(alarm,2000);
+        clearTimeout(al);
+        console.log('Alarm set');
+        //setInterval(alarm,1000);
+        //clearInterval(alarm);
+
+    </script>
+</body>
+</html>

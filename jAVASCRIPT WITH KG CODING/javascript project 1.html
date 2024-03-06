@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <style>
+        body
+        {
+            background-color: beige;
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="greeting"></h2>
+
+    <button id="myButton" onclick="buttonPressed();">0</button>
+    <script>
+        let numberOfClicked = 0;
+
+        function buttonPressed()
+        {
+            let button = document.querySelector('#myButton');
+            numberOfClicked++;
+            button.innerHTML= numberOfClicked;
+        }
+        
+        
+        
+        
+        
+        
+function Greeting(person)
+        {
+        let myDate = new Date();
+        let hour = myDate.getHours();
+        let heading = document.querySelector('#greeting');
+
+        if(hour > 5 && hour < 12)
+        {
+            heading.innerText = `Good Morning ${person}`;
+        }
+        else if(hour > 12 && hour < 16)
+        {
+            heading.innerText = `Good Ater Noon ${person}`;
+        }
+        else if(hour > 16 && hour < 20)
+        {
+            heading.innerText = `Good Evening ${person}`;
+        }
+        else
+        {
+            heading.innerText = `Good Night ${person}`;
+        }
+    }
+
+    Greeting('Raj')
+
+    </script>
+</body>
+</html>
